@@ -33,7 +33,7 @@ func getUserInfo(c *gin.Context) {
 		"slack_name":      user.Slack_name,
 		"current_day":     time.Now().Weekday().String(),
 		"Track":           user.Track,
-		"github_file_url": "https://github.com/macadadi/backend/blob/master/test.go",
+		"github_file_url": "https://github.com/macadadi/backend/blob/master/main.go",
 		"github_repo_url": "https://github.com/macadadi/backend",
 		"status_code":     http.StatusOK,
 		"utc_time":        time.Now().UTC(),
