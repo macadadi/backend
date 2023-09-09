@@ -22,7 +22,7 @@ func getUserInfo(c *gin.Context) {
 	var user ProfileInfo
 	currentTime := time.Now().UTC()
 
-	formattedDateTime := currentTime.Format("2006-01-02T15:04:05.999Z")
+	formattedDateTime := currentTime.Format("2006-01-02T15:04:05Z")
 	err := c.ShouldBind(&user)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
