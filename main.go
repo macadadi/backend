@@ -36,6 +36,6 @@ func getUserInfo(c *gin.Context) {
 		"github_file_url": "https://github.com/macadadi/backend/blob/master/main.go",
 		"github_repo_url": "https://github.com/macadadi/backend",
 		"status_code":     http.StatusOK,
-		"utc_time":        time.Now(),
+		"utc_time":        time.Now().UTC().Format("2006-01-02T15:04:05.00Z"),
 	})
 }
